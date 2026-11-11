@@ -1,0 +1,7 @@
+[
+  { "code": "IN", "name": "India",   "capital": "New Delhi", "currency": "INR", "continent": "AS" },
+  { "code": "FR", "name": "France",  "capital": "Paris",     "currency": "EUR", "continent": "EU" },
+  { "code": "JP", "name": "Japan",   "capital": "Tokyo",     "currency": "JPY", "continent": "AS" },
+  { "code": "DE", "name": "Germany", "capital": "Berlin",    "currency": "EUR", "continent": "EU" },
+  { "code": "CA", "name": "Canada",  "capital": "Ottawa",    "currency": "CAD", "continent": "NA" }
+]

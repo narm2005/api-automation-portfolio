@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:tem="http://tempuri.org/">
+  <soap:Body>
+    <tem:{{operation}}>
+      <tem:intA>{{a}}</tem:intA>
+      <tem:intB>{{b}}</tem:intB>
+    </tem:{{operation}}>
+  </soap:Body>
+</soap:Envelope>

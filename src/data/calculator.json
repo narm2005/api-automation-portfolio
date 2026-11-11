@@ -1,0 +1,7 @@
+[
+  { "operation": "Add",      "a": 7,   "b": 5,  "expected": 12 },
+  { "operation": "Subtract", "a": 20,  "b": 8,  "expected": 12 },
+  { "operation": "Multiply", "a": 6,   "b": 7,  "expected": 42 },
+  { "operation": "Divide",   "a": 100, "b": 4,  "expected": 25 },
+  { "operation": "Add",      "a": -15, "b": 10, "expected": -5 }
+]

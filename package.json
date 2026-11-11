@@ -1,0 +1,21 @@
+{
+  "name": "api-automation-portfolio",
+  "version": "1.0.0",
+  "description": "GraphQL + SOAP API test automation with Playwright and TypeScript",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:graphql": "playwright test --project=graphql",
+    "test:soap": "playwright test --project=soap",
+    "test:contract": "playwright test --project=contract",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "fast-xml-parser": "^4.5.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,9 @@
+query SchemaFields($type: String!) {
+  __type(name: $type) {
+    name
+    fields {
+      name
+      type { kind name ofType { kind name } }
+    }
+  }
+}

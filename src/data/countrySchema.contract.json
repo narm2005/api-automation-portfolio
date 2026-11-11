@@ -1,0 +1,12 @@
+{
+  "type": "Country",
+  "description": "Fields our consumers depend on. Removing or retyping any of these is a breaking change.",
+  "requiredFields": {
+    "code": "ID",
+    "name": "String",
+    "capital": "String",
+    "currency": "String",
+    "continent": "Continent",
+    "languages": "Language"
+  }
+}
