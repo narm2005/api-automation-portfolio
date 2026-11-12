@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Narmadha Palanisamy — QA Automation</title>
-<meta name="description" content="Narmadha Palanisamy, QA Automation Engineer: Playwright, Selenium, GraphQL and SOAP API testing, Salesforce QA, CI/CD.">
+<title>Narmadha Palanisamy — Senior SDET / QA Automation Lead</title>
+<meta name="description" content="Narmadha Palanisamy, Senior SDET and QA Automation Lead: Playwright and Selenium frameworks, API testing (REST, GraphQL, SOAP), Salesforce QA, AI-assisted testing, CI/CD.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -66,10 +66,13 @@ p { margin: 0; }
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding: 40px 0 64px; }
 .status { display: inline-flex; align-items: center; gap: 8px; font: 500 13px var(--font-mono); color: var(--pass); border: 1px solid var(--line); background: var(--surface); padding: 5px 12px; border-radius: 999px; }
-.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--pass); }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--pass); flex: none; }
 .hero h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 700; letter-spacing: -0.02em; margin: 20px 0 10px; }
 .hero .role { font: 500 20px var(--font-display); color: var(--accent); margin-bottom: 18px; }
 .hero .lede { color: var(--muted); max-width: 52ch; font-size: 18px; }
+.stats { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 22px; }
+.stat b { display: block; font: 700 24px var(--font-display); color: var(--ink); font-variant-numeric: tabular-nums; }
+.stat span { font: 500 12px var(--font-mono); color: var(--muted); }
 .cta { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
 .btn { display: inline-block; padding: 11px 18px; border-radius: 8px; font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface); }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
@@ -100,9 +103,11 @@ section { padding: 56px 0; border-top: 1px solid var(--line); }
 .job { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px 26px; }
 .job header { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; margin-bottom: 12px; }
 .job h3 { font-size: 21px; }
-.job .where { font: 500 13px var(--font-mono); color: var(--muted); }
+.job .title { display: block; font: 500 15px var(--font-body); color: var(--ink); margin-top: 4px; }
+.job .where { font: 500 13px var(--font-mono); color: var(--muted); text-align: right; }
 .job ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
 .job li::marker { color: var(--pass); }
+.quote { margin: 14px 0 0; padding: 12px 16px; border-left: 3px solid var(--pass); background: var(--bg); border-radius: 0 8px 8px 0; color: var(--muted); font-size: 15.5px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
 .chip { font: 500 12px var(--font-mono); color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px; }
 
@@ -126,11 +131,13 @@ section { padding: 56px 0; border-top: 1px solid var(--line); }
 
 /* Contact */
 .contact { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
-footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mono); border-top: 1px solid var(--line); }
+footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mono); border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+footer a { color: var(--muted); }
 
 @media (max-width: 860px) {
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 16px; }
   .sec { grid-template-columns: 1fr; gap: 12px; }
+  .job .where { text-align: left; }
 }
 @media (max-width: 480px) {
   .wrap { padding: 0 16px; }
@@ -157,13 +164,19 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
 
   <div class="hero">
     <div>
-      <span class="status">Open to contract roles · Remote or NY/NJ/CT/Philly hybrid</span>
+      <span class="status">Open to contract &amp; full-time · Remote or NY/NJ/CT/PA hybrid</span>
       <h1>Narmadha Palanisamy</h1>
-      <p class="role">QA Automation Engineer</p>
-      <p class="lede">I build test automation that covers both the UI and the API layer: Playwright and Selenium for the front end, GraphQL, SOAP and REST for the services behind it, all running in CI on every change. Most of my recent work is in financial services and healthcare.</p>
+      <p class="role">Senior SDET · QA Automation Lead</p>
+      <p class="lede">I build test automation that teams trust, across the UI and the API layer: Playwright and Selenium frameworks for the front end, REST, GraphQL and SOAP for the services behind it, all running in CI on every change. 12+ years in quality engineering, most recently leading Salesforce quality in banking, with Test Lead experience and a strong interest in AI-assisted testing.</p>
+      <div class="stats">
+        <div class="stat"><b>12+</b><span>years in QA</span></div>
+        <div class="stat"><b>~70%</b><span>less manual testing</span></div>
+        <div class="stat"><b>5</b><span>QA engineers led</span></div>
+      </div>
       <div class="cta">
-        <a class="btn primary" href="https://github.com/narm2005/api-automation-portfolio">View the API test framework</a>
-        <a class="btn" href="https://github.com/narm2005">GitHub profile</a>
+        <a class="btn primary" href="resume.pdf">Download resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/narmadhap">LinkedIn</a>
+        <a class="btn" href="https://github.com/narm2005">GitHub</a>
       </div>
     </div>
 
@@ -192,33 +205,59 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
         <div class="jobs">
           <article class="job">
             <header>
-              <h3>Capital One</h3>
-              <span class="where">QA Automation · Salesforce &amp; integrations</span>
+              <div>
+                <h3>Capital One</h3>
+                <span class="title">Senior Test Automation Engineer (Consultant)</span>
+              </div>
+              <span class="where">June 2022 – Present<br>Salesforce &amp; integrations · Banking</span>
             </header>
             <ul>
-              <li>Write UI automation in Playwright with TypeScript and in Selenium with Java.</li>
-              <li>Test Salesforce Sales Cloud and Service Cloud: cases, profiles and permissions, record types, custom objects, Lightning Web Components, Knowledge articles, and data and reports.</li>
-              <li>Ran integration testing between Salesforce and downstream systems BusinessCore and One View, plus the Amazon Connect contact-center integration.</li>
-              <li>Run suites through a test-orchestration setup: declarative Jenkins pipelines dispatch several test engines onto AWS nodes.</li>
-              <li>Migrated a legacy Ruby test suite to Playwright, using AI-assisted tooling (Claude skills) to speed up the conversion.</li>
+              <li>Designed and maintain a reusable Playwright framework in TypeScript (Cucumber/BDD, Page Object Model, custom fixtures, API layer), and automate in Selenium with Java. Replacing manual regression with CI-integrated automation cut manual testing effort by about 70%.</li>
+              <li>Lead QA for Salesforce Sales Cloud and Service Cloud: profiles, permission sets and field-level security, record types, Flows, validation rules, Apex, Lightning Web Components and Knowledge, with backend checks in SOQL.</li>
+              <li>Own release validation in each sandbox and regression before every production deployment, with go/no-go recommendations.</li>
+              <li>Led integration testing between Salesforce and downstream systems BusinessCore and One View, plus the Amazon Connect contact-center integration (calls, IVR, routing, transfers).</li>
+              <li>Run suites through a test-orchestration setup: declarative Jenkins pipelines dispatch several test engines onto AWS nodes, with credentials from AWS Secrets Manager.</li>
+              <li>Led the migration of a legacy Ruby/Watir suite to Playwright, using a Claude skill with conversion rules and a validation checklist so every converted test was reviewed and run in CI.</li>
             </ul>
             <div class="chips">
-              <span class="chip">Playwright</span><span class="chip">TypeScript</span><span class="chip">Selenium</span><span class="chip">Java</span><span class="chip">Salesforce</span><span class="chip">Jenkins</span><span class="chip">AWS</span>
+              <span class="chip">Playwright</span><span class="chip">TypeScript</span><span class="chip">Selenium</span><span class="chip">Java</span><span class="chip">Salesforce</span><span class="chip">Karate</span><span class="chip">Postman</span><span class="chip">Jenkins</span><span class="chip">AWS</span>
             </div>
           </article>
 
           <article class="job">
             <header>
-              <h3>System Soft Technologies</h3>
-              <span class="where">QA · Healthcare client (Centene)</span>
+              <div>
+                <h3>Centene <span style="font-weight:500;color:var(--muted);font-size:16px">(via System Soft Technologies)</span></h3>
+                <span class="title">QA Engineer · Healthcare</span>
+              </div>
+              <span class="where">January 2022 – June 2022</span>
             </header>
             <ul>
+              <li>Took ownership of the testing function for the AWS Federation Layer through its production release: test coverage, early escalation of defects and risks, and regular status reports for leadership.</li>
               <li>Tested an AWS data pipeline end to end: Lambda functions writing JSON to S3, Talend jobs splitting the JSON, and loads into Snowflake that fed business reports.</li>
-              <li>Validated data in Snowflake and MongoDB against the source records.</li>
-              <li>Coordinated test work with the offshore team across time zones.</li>
+              <li>Validated data in Snowflake and MongoDB against the source records, and coordinated test work with the offshore team across time zones.</li>
             </ul>
+            <p class="quote">Recognized by the Director of IT for taking ownership of testing and ensuring a quality production release.</p>
             <div class="chips">
               <span class="chip">AWS Lambda</span><span class="chip">S3</span><span class="chip">Talend</span><span class="chip">Snowflake</span><span class="chip">MongoDB</span><span class="chip">SQL</span>
+            </div>
+          </article>
+
+          <article class="job">
+            <header>
+              <div>
+                <h3>System Soft Technologies</h3>
+                <span class="title">Test Lead</span>
+              </div>
+              <span class="where">February 2021 – January 2022</span>
+            </header>
+            <ul>
+              <li>Led a QA team of five: planned Agile testing, prioritized work, mentored testers and reported quality status to management.</li>
+              <li>Acted as the onshore QA point of contact for offshore QA and development teams.</li>
+              <li>Built a reusable Selenium/Java framework (Page Object Model, TestNG, Maven) and a REST Assured API framework, running in Jenkins CI/CD.</li>
+            </ul>
+            <div class="chips">
+              <span class="chip">Selenium</span><span class="chip">Java</span><span class="chip">TestNG</span><span class="chip">REST Assured</span><span class="chip">Jenkins</span>
             </div>
           </article>
         </div>
@@ -233,9 +272,9 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
         <h2>Things I've built</h2>
         <div class="projects">
           <article class="proj feature">
-            <span class="kind">Test framework</span>
+            <span class="kind">Portfolio project · API test framework</span>
             <h3>GraphQL + SOAP API automation</h3>
-            <p>A Playwright and TypeScript framework that tests a modern GraphQL API and legacy SOAP services side by side. It checks the GraphQL <code>errors</code> array as well as HTTP status, handles SOAP 1.1 and 1.2 faults, runs an introspection-based check for breaking schema changes, and confirms that the GraphQL and SOAP systems agree on the same reference data.</p>
+            <p>A Playwright and TypeScript framework I built to test a modern GraphQL API and legacy SOAP services side by side. It checks the GraphQL <code>errors</code> array as well as HTTP status, handles SOAP 1.1 and 1.2 faults, runs an introspection-based check for breaking schema changes, and compares the reference data both systems return to confirm they agree.</p>
             <div class="inventory">
               <div class="inv"><b>37</b><span>tests</span></div>
               <div class="inv"><b>3</b><span>projects: graphql · soap · contract</span></div>
@@ -245,9 +284,9 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
           </article>
 
           <article class="proj">
-            <span class="kind">SaaS app</span>
+            <span class="kind">AI SaaS app</span>
             <h3>SlickReceipts</h3>
-            <p>Upload a photo of a receipt and get a clean spreadsheet back. I built the FastAPI backend and a separate web front end, and deployed both.</p>
+            <p>Upload a photo of a receipt and get a clean spreadsheet back, using OCR and LLM extraction. I built the FastAPI backend and a separate web front end and deployed both. Because LLM output isn't deterministic, I built an automated evaluation that scores extraction accuracy against a test dataset with pass thresholds, alongside Playwright end-to-end tests and a pytest API suite in GitHub Actions.</p>
             <div class="links">
               <a href="https://pixel-to-spreadsheet-convert.onrender.com">Live app</a>
               <a href="https://github.com/narm2005/receipt2Xcl">Backend</a>
@@ -256,9 +295,9 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
           </article>
 
           <article class="proj">
-            <span class="kind">Migration</span>
+            <span class="kind">AI-assisted migration</span>
             <h3>Ruby → Playwright suite migration</h3>
-            <p>Moved an existing Ruby test suite to Playwright with TypeScript at Capital One. I used AI coding tools to convert the bulk of the tests, then reviewed and hardened the output by hand.</p>
+            <p>Led the move of a legacy Ruby/Watir suite to Playwright with TypeScript at Capital One. I wrote a reusable Claude skill with our conversion rules, framework conventions and before-and-after examples, so every test was converted the same way. Each converted test went through a review checklist and had to pass in CI, and both suites ran side by side until results matched.</p>
           </article>
         </div>
       </div>
@@ -271,12 +310,14 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
       <div>
         <h2>Toolkit</h2>
         <div class="skills">
-          <div class="skill"><h3>UI automation</h3><p>Playwright (TypeScript), Selenium WebDriver (Java), page objects, data-driven tests</p></div>
-          <div class="skill"><h3>API testing</h3><p>GraphQL queries and mutations, SOAP / WSDL / XML, REST, schema and contract checks</p></div>
-          <div class="skill"><h3>Salesforce QA</h3><p>Sales Cloud, Service Cloud, LWC, profiles and permissions, record types, Amazon Connect</p></div>
-          <div class="skill"><h3>Data testing</h3><p>Snowflake, MongoDB, SQL, S3 / JSON pipelines, Talend ETL validation</p></div>
-          <div class="skill"><h3>CI/CD</h3><p>Jenkins declarative pipelines, GitHub Actions, JUnit and HTML reporting, AWS test nodes</p></div>
-          <div class="skill"><h3>AI-assisted QA</h3><p>Claude and GitHub Copilot for test generation, framework migration and code review</p></div>
+          <div class="skill"><h3>UI automation</h3><p>Playwright (TypeScript), Selenium WebDriver (Java), Cucumber/BDD, page objects, fixtures, data-driven tests</p></div>
+          <div class="skill"><h3>API testing</h3><p>REST (REST Assured, Postman/Newman, Karate), GraphQL, SOAP / WSDL / XML, schema and contract checks, OAuth</p></div>
+          <div class="skill"><h3>Salesforce QA</h3><p>Sales Cloud, Service Cloud, LWC, Flows, Apex, profiles, permission sets, FLS, sharing, SOQL, Amazon Connect</p></div>
+          <div class="skill"><h3>Data testing</h3><p>SQL, Snowflake, MongoDB, S3 / JSON pipelines, Talend ETL validation</p></div>
+          <div class="skill"><h3>CI/CD &amp; cloud</h3><p>Jenkins declarative pipelines, GitHub Actions, Docker, JUnit and HTML reporting, AWS (Lambda, S3, Secrets Manager)</p></div>
+          <div class="skill"><h3>Languages</h3><p>TypeScript, JavaScript, Java, Python (Pytest), SQL</p></div>
+          <div class="skill"><h3>QA leadership</h3><p>Test strategy and planning, release readiness and go/no-go, defect triage, status reporting, mentoring, onshore/offshore coordination</p></div>
+          <div class="skill"><h3>AI-assisted QA</h3><p>Claude skills and GitHub Copilot for test generation and migration, LLM output evaluation with test datasets and thresholds</p></div>
         </div>
       </div>
     </div>
@@ -287,18 +328,21 @@ footer { padding: 28px 0 48px; color: var(--muted); font: 400 13px var(--font-mo
       <div class="sec-label"><b>04</b>contact</div>
       <div>
         <h2>Let's talk</h2>
-        <p class="intro">I'm looking for contract QA automation roles, either remote or hybrid in the New York, New Jersey, Connecticut or Philadelphia areas.</p>
+        <p class="intro">I'm looking for Senior SDET, QA Automation Lead and Salesforce QA roles, contract (C2C) or full-time, remote or hybrid in the New York, New Jersey, Connecticut or Philadelphia areas.</p>
         <div class="contact">
-          <a class="btn primary" href="https://github.com/narm2005">github.com/narm2005</a>
-          <!-- Add LinkedIn and email here, e.g.:
-          <a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
-          <a class="btn" href="mailto:you@example.com">you@example.com</a> -->
+          <a class="btn primary" href="mailto:narmadha2005@gmail.com">narmadha2005@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/narmadhap">LinkedIn</a>
+          <a class="btn" href="https://github.com/narm2005">GitHub</a>
+          <a class="btn" href="resume.pdf">Resume (PDF)</a>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>© 2026 Narmadha Palanisamy</footer>
+  <footer>
+    <span>© 2026 Narmadha Palanisamy</span>
+    <span><a href="mailto:narmadha2005@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/narmadhap">LinkedIn</a> · <a href="https://github.com/narm2005">GitHub</a></span>
+  </footer>
 </div>
 </body>
 </html>
